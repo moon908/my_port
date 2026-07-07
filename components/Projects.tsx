@@ -184,16 +184,6 @@ const projects: Project[] = [
 ];
 
 export default function Projects() {
-  const [images, setImages] = React.useState<Record<string, string>>({});
-
-  const handleImageUpload = (projectId: string, event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (file) {
-      const url = URL.createObjectURL(file);
-      setImages((prev) => ({ ...prev, [projectId]: url }));
-    }
-  };
-
   return (
     <section id="projects" className="w-full bg-neutral-950 text-neutral-100 font-jetbrains relative py-24 px-6 md:px-12 border-t border-neutral-900/80 overflow-hidden">
       {/* Blueprint grid background */}
@@ -218,7 +208,6 @@ export default function Projects() {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {projects.map((project, idx) => {
-            const displayImage = images[project.id] || project.image;
             return (
               <div
                 key={project.id}
@@ -245,36 +234,12 @@ export default function Projects() {
                   <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-1 gap-6 items-start flex-1">
                     
                     {/* Left Side: Project Image Preview */}
-                    <div className="md:col-span-6 lg:col-span-1 relative w-full h-44 rounded-lg overflow-hidden border border-neutral-800 bg-neutral-950/40 group/upload cursor-pointer">
-                      {displayImage ? (
-                        <>
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={displayImage}
-                            alt={project.title}
-                            className="w-full h-full object-cover group-hover/upload:scale-105 transition-transform duration-500"
-                          />
-                          <div className="absolute inset-0 bg-neutral-950/70 opacity-0 group-hover/upload:opacity-100 transition-opacity flex items-center justify-center">
-                            <span className="text-[10px] font-mono text-violet-400">
-                              // CLICK_TO_REPLACE_IMAGE
-                            </span>
-                          </div>
-                        </>
-                      ) : (
-                        <div className="text-center p-4 space-y-2">
-                          <div className="text-neutral-500 text-xs font-mono group-hover/upload:text-violet-400 transition-colors">
-                            [DRAG_AND_DROP_OR_CLICK]
-                          </div>
-                          <div className="text-[10px] text-neutral-600 font-mono">
-                            PNG, JPG or WEBP (MAX 5MB)
-                          </div>
-                        </div>
-                      )}
-                      <input
-                        type="file"
-                        accept="image/*"
-                        onChange={(e) => handleImageUpload(project.id, e)}
-                        className="absolute inset-0 opacity-0 cursor-pointer z-10"
+                    <div className="md:col-span-6 lg:col-span-1 relative w-full h-44 rounded-lg overflow-hidden border border-neutral-800 bg-neutral-950/40">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
 

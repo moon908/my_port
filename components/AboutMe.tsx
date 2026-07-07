@@ -479,7 +479,7 @@ export default function AboutMe() {
             <div className="w-full space-y-4 text-left font-mono text-xs sm:text-sm text-neutral-400">
               <div className="flex items-center space-x-3">
                 <span className="text-violet-400 text-sm sm:text-base">📍</span>
-                <span>Pune, India</span>
+                <span>Maharashtra, India</span>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-violet-400 text-sm sm:text-base">✉️</span>
@@ -487,7 +487,7 @@ export default function AboutMe() {
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-violet-400 text-sm sm:text-base">📞</span>
-                <a href="tel:8010347901" className="hover:text-white transition-colors">8010347901</a>
+                <a href="tel:+918010347901" className="hover:text-white transition-colors">(+91) 8010347901</a>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-violet-400 text-sm sm:text-base">🔗</span>
@@ -603,25 +603,25 @@ export default function AboutMe() {
               {/* Competency 1: Operations */}
               <div className="bg-neutral-900/20 border border-neutral-900 p-5 rounded-2xl flex flex-col space-y-4 hover:border-violet-500/15 transition-all duration-300">
                 <div className="flex items-center space-x-2.5">
-                  <div className="w-6 h-6 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
-                    <svg className="w-3.5 h-3.5 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <div className="w-7 h-7 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
+                    <svg className="w-4 h-4 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.43l-1.003.828c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.43l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 0 1 0-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                     </svg>
                   </div>
-                  <h4 className="text-[10px] font-bold font-mono uppercase tracking-widest text-neutral-200">Operations</h4>
+                  <h4 className="text-xs sm:text-sm font-bold font-mono uppercase tracking-widest text-neutral-200">Operations</h4>
                 </div>
-                <ul className="space-y-2.5 text-[9px] font-mono text-neutral-400">
+                <ul className="space-y-2.5 text-xs font-mono text-neutral-400">
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Process Optimization</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Workflow Automation</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Business Strategy</span>
                   </li>
                 </ul>
@@ -630,24 +630,24 @@ export default function AboutMe() {
               {/* Competency 2: AI Engineering */}
               <div className="bg-neutral-900/20 border border-neutral-900 p-5 rounded-2xl flex flex-col space-y-4 hover:border-violet-500/15 transition-all duration-300">
                 <div className="flex items-center space-x-2.5">
-                  <div className="w-6 h-6 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
-                    <svg className="w-3.5 h-3.5 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <div className="w-7 h-7 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
+                    <svg className="w-4 h-4 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M12 3v1.5m3.75-1.5v1.5M19 12h1.5m-1.5 3.75H21m-2-7.5H21M3 12h1.5m-.5 3.75H5m-2-7.5H5m3.75 13.5v1.5M12 17.25v1.5m3.75-1.5v1.5M6 6h12v12H6V6Z" />
                     </svg>
                   </div>
-                  <h4 className="text-[10px] font-bold font-mono uppercase tracking-widest text-neutral-200">AI Engineering</h4>
+                  <h4 className="text-xs sm:text-sm font-bold font-mono uppercase tracking-widest text-neutral-200">AI Engineering</h4>
                 </div>
-                <ul className="space-y-2.5 text-[9px] font-mono text-neutral-400">
+                <ul className="space-y-2.5 text-xs font-mono text-neutral-400">
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
-                    <span>Machine Learning</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
+                    <span>ML/DL Workflow</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>AI Application Dev</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>LLM Integration</span>
                   </li>
                 </ul>
@@ -656,24 +656,24 @@ export default function AboutMe() {
               {/* Competency 3: Data Analytics */}
               <div className="bg-neutral-900/20 border border-neutral-900 p-5 rounded-2xl flex flex-col space-y-4 hover:border-violet-500/15 transition-all duration-300">
                 <div className="flex items-center space-x-2.5">
-                  <div className="w-6 h-6 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
-                    <svg className="w-3.5 h-3.5 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <div className="w-7 h-7 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
+                    <svg className="w-4 h-4 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v5.25c0 .621-.504 1.125-1.125 1.125h-2.25A1.125 1.125 0 0 1 3 18.375v-5.25ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125v-9.75ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v14.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
                     </svg>
                   </div>
-                  <h4 className="text-[10px] font-bold font-mono uppercase tracking-widest text-neutral-200">Data Analytics</h4>
+                  <h4 className="text-xs sm:text-sm font-bold font-mono uppercase tracking-widest text-neutral-200">Data Analytics</h4>
                 </div>
-                <ul className="space-y-2.5 text-[9px] font-mono text-neutral-400">
+                <ul className="space-y-2.5 text-xs font-mono text-neutral-400">
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Data Analysis</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Visualization</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Insight Generation</span>
                   </li>
                 </ul>
@@ -682,24 +682,24 @@ export default function AboutMe() {
               {/* Competency 4: Leadership */}
               <div className="bg-neutral-900/20 border border-neutral-900 p-5 rounded-2xl flex flex-col space-y-4 hover:border-violet-500/15 transition-all duration-300">
                 <div className="flex items-center space-x-2.5">
-                  <div className="w-6 h-6 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
-                    <svg className="w-3.5 h-3.5 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <div className="w-7 h-7 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
+                    <svg className="w-4 h-4 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m0 0-.003-.031c0-.225.012-.447.037-.666A11.944 11.944 0 0 0 12 15c2.17 0 4.207.576 5.963 1.584A6.062 6.062 0 0 0 18 18.72m-12 0a9.094 9.094 0 0 1-3.741-.479 3 3 0 0 1 4.682-2.72m.94 3.198.002.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c2.17 0 4.207-.576 5.963-1.584A6.062 6.062 0 0 1 12 15c-2.17 0-4.207.576-5.963 1.584A6.062 6.062 0 0 1 12 15ZM12 11.25a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75ZM9.75 14.25a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.03a11.99 11.99 0 0 1-4.5 0v-.03Z" />
                     </svg>
                   </div>
-                  <h4 className="text-[10px] font-bold font-mono uppercase tracking-widest text-neutral-200">Leadership</h4>
+                  <h4 className="text-xs sm:text-sm font-bold font-mono uppercase tracking-widest text-neutral-200">Leadership</h4>
                 </div>
-                <ul className="space-y-2.5 text-[9px] font-mono text-neutral-400">
+                <ul className="space-y-2.5 text-xs font-mono text-neutral-400">
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Team Management</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Stakeholder Collab</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-[10px] font-bold">✓</span>
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Project Delivery</span>
                   </li>
                 </ul>

@@ -28,22 +28,22 @@ const projects: Project[] = [
   {
     id: "PRJ-001",
     code: "01",
-    title: "Aether Control",
-    subtitle: "High-Frequency Satellite Telemetry Dashboard",
+    title: "Atheria AI",
+    subtitle: "Agriculture Analysis",
     status: "Live",
-    description: "Real-time telemetry visualization and control interface for high-frequency satellite communication systems.",
+    description: "An intelligent agriculture analysis platform providing crop health diagnostics and yield optimization insights.",
     features: [
-      "Low-latency telemetry streaming via custom WebSocket brokers",
-      "Interactive 3D orbital trajectory simulation using Three.js / WebGL",
-      "High-throughput caching layer with Redis to optimize database read cycles",
-      "Robust relational logging schema in PostgreSQL with automated partition rollups"
+      "Computer-vision based crop foliage disease identification models",
+      "Geospatial soil composition and moisture analysis integrations",
+      "Historical climatic data ingestion for predictive harvest forecasting",
+      "Localized farm advisory generation via natural language generation"
     ],
-    techStack: ["Next.js 14", "TypeScript", "WebSockets", "Redis", "PostgreSQL", "Tailwind CSS"],
+    techStack: ["Next.js", "Python (PyTorch)", "FastAPI", "PostgreSQL", "Tailwind CSS"],
     links: {
-      demo: "https://demo.aether.siddhesh.space",
-      source: "https://github.com/siddheshmoon/aether-telemetry"
+      demo: "https://knowyourcrop.vercel.app",
+      source: "https://github.com/moon908/crop_health"
     },
-    image: "/aether_control.jpg",
+    image: "/project/project1.jpeg",
     theme: {
       border: "hover:border-violet-500/50 hover:shadow-[0_0_35px_rgba(139,92,246,0.08)]",
       badge: "border-violet-500/30 text-violet-400 bg-violet-950/20",
@@ -54,22 +54,22 @@ const projects: Project[] = [
   {
     id: "PRJ-002",
     code: "02",
-    title: "Helios DB",
-    subtitle: "Distributed Consensus Ledger for Deep-Space Logistics",
+    title: "ProjectFlow",
+    subtitle: "Project Management",
     status: "Live",
-    description: "A scalable and fault-tolerant distributed ledger ensuring data integrity and real-time consensus across nodes.",
+    description: "A collaborative project management application featuring real-time visual boards and sprint tracking.",
     features: [
-      "Custom consensus protocol implementation utilizing Rust-based RPC nodes",
-      "Resilient high-write Cassandra cluster architecture for transaction integrity",
-      "Automated infrastructure containerization using Docker and Kubernetes",
-      "Comprehensive telemetry tracking via Prometheus and Grafana dashboards"
+      "Dynamic real-time workflow synchronization using WebSocket subscriptions",
+      "Detailed time-tracking and milestone velocity analytics dashboards",
+      "Automated sprint planning and task backlog prioritization algorithms",
+      "Seamless GitHub pull request status and commit event integrations"
     ],
-    techStack: ["React", "Rust (Actix-web)", "Cassandra", "gRPC", "Kubernetes", "Docker"],
+    techStack: ["React", "Node.js (Express)", "MongoDB", "Socket.io", "Tailwind CSS"],
     links: {
-      demo: "https://demo.helios.siddhesh.space",
-      source: "https://github.com/siddheshmoon/helios-ledger"
+      demo: "https://projectflow-beryl-theta.vercel.app",
+      source: "https://github.com/moon908/project_mgmt"
     },
-    image: "/helios_db.jpg",
+    image: "/project/project2.jpeg",
     theme: {
       border: "hover:border-blue-500/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.08)]",
       badge: "border-blue-500/30 text-blue-400 bg-blue-950/20",
@@ -80,22 +80,22 @@ const projects: Project[] = [
   {
     id: "PRJ-003",
     code: "03",
-    title: "Zephyr Link",
-    subtitle: "Secure Sub-Orbital Mesh Communication Network",
+    title: "AcuVad",
+    subtitle: "Voice Activity Detector",
     status: "Live",
-    description: "Encrypted and resilient mesh network for sub-orbital vehicles with dynamic routing and failover protocols.",
+    description: "An advanced Voice Activity Detector (VAD) system designed to identify and isolate speech in audio streams.",
     features: [
-      "Custom UDP packet multiplexing for sub-orbital vehicle links",
-      "Peer-to-peer routing algorithm with automatic dynamic network topology discovery",
-      "AES-GCM-256 low-overhead firmware encryption module",
-      "Grafana integration for live signal degradation profiling"
+      "Interactive live sensor drift calibration profiling views",
+      "Sub-millisecond data logging pipelines using optimized database indexes",
+      "Automatic anomaly identification and threshold alert triggers",
+      "Custom hardware-in-the-loop validation script runner console"
     ],
-    techStack: ["Go", "WebRTC", "Protobuf", "Grafana", "Docker"],
+    techStack: ["React", "Python", "SQLite", "Chart.js", "Tailwind CSS"],
     links: {
-      demo: "https://demo.zephyr.siddhesh.space",
-      source: "https://github.com/siddheshmoon/zephyr-mesh"
+      demo: "https://acuvad.vercel.app",
+      source: "https://github.com/moon908/vad_detail"
     },
-    image: "/zephyr_mesh.jpg",
+    image: "/project/project3.jpeg",
     theme: {
       border: "hover:border-teal-500/50 hover:shadow-[0_0_35px_rgba(20,184,166,0.08)]",
       badge: "border-teal-500/30 text-teal-400 bg-teal-950/20",
@@ -106,20 +106,20 @@ const projects: Project[] = [
   {
     id: "PRJ-004",
     code: "04",
-    title: "Chronos Engine",
-    subtitle: "Real-Time Spatial Event Temporal Mapping Engine",
+    title: "Spectra Analysis",
+    subtitle: "Automatic Reporting Tool",
     status: "Live",
-    description: "Processes and visualizes real-time spatial events with high-throughput temporal mapping capabilities.",
+    description: "An automatic reporting tool visualizing frequency spectra, signal properties, and degradation metrics.",
     features: [
-      "High-performance time-series database index modeling",
-      "Decoupled event streaming using Apache Kafka pipelines",
-      "WebGL visual timeline renderer using custom shader materials",
-      "Autoscaling serverless execution routines in AWS Lambda"
+      "Fast Fourier Transform (FFT) signal wave visualization using WebGL",
+      "Custom noise filtering and signal gain adjustment parameters",
+      "Automated report export with interactive canvas rendering",
+      "Kafka-based event streams processing high-frequency audio files"
     ],
-    techStack: ["TypeScript", "Apache Kafka", "WebGL", "AWS Lambda", "Node.js"],
+    techStack: ["TypeScript", "WebGL", "Apache Kafka", "AWS Lambda", "Node.js"],
     links: {
-      demo: "https://demo.chronos.siddhesh.space",
-      source: "https://github.com/siddheshmoon/chronos-engine"
+      demo: "https://spectrareport.vercel.app",
+      source: "https://github.com/moon908/reporting_tool"
     },
     image: "/chronos_engine.jpg",
     theme: {
@@ -132,22 +132,22 @@ const projects: Project[] = [
   {
     id: "PRJ-005",
     code: "05",
-    title: "Atlas Shield",
-    subtitle: "Autonomous Perimeter Defense & Threat Analysis Node",
+    title: "Investo",
+    subtitle: "Intelligent Investing Application",
     status: "Live",
-    description: "Real-time geospatial threat classification and autonomous perimeter firewall management system.",
+    description: "An intelligent investing application offering algorithmic portfolio tracking and asset rebalancing.",
     features: [
-      "Real-time IP packet profiling and security threat mitigation",
-      "Dynamic autonomous firewall rule adjustments via Go workers",
-      "Geospatial visualization of inbound network traffic streams",
-      "InfluxDB integration for high-performance time-series logging"
+      "Real-time market price feed integration via financial APIs",
+      "Risk-adjusted performance profiling using Sharpe and Sortino ratios",
+      "Interactive asset allocation rebalancing simulators",
+      "Time-series transaction logs database with automated tax rollups"
     ],
-    techStack: ["Go", "gRPC", "Redis", "InfluxDB", "Docker"],
+    techStack: ["Next.js", "TypeScript", "Redis", "PostgreSQL", "Tailwind CSS"],
     links: {
-      demo: "https://demo.shield.siddhesh.space",
-      source: "https://github.com/siddheshmoon/atlas-shield"
+      demo: "https://investo-six.vercel.app/",
+      source: "https://github.com/moon908/investing_advice"
     },
-    image: "/atlas_shield.jpg",
+    image: "/project/project5.jpeg",
     theme: {
       border: "hover:border-rose-500/50 hover:shadow-[0_0_35px_rgba(244,63,94,0.08)]",
       badge: "border-rose-500/30 text-rose-400 bg-rose-950/20",
@@ -158,20 +158,20 @@ const projects: Project[] = [
   {
     id: "PRJ-006",
     code: "06",
-    title: "Apex Core",
-    subtitle: "Low-Latency Edge Computing Cluster Manager",
+    title: "Robotics Workflow",
+    subtitle: "Robotics Workflow Hub",
     status: "Live",
-    description: "Decentralized cluster orchestration platform for optimizing container deployment across heterogeneous edge devices.",
+    description: "A decentralized edge orchestration hub coordinating serverless command workflows on robotic devices.",
     features: [
-      "Decentralized clustering orchestration and workload scheduling",
-      "Sandboxed serverless logic execution utilizing WebAssembly runtimes",
-      "High-speed pub/sub message broker setup using NATS architecture",
-      "Cluster efficiency profiling with Prometheus and Grafana systems"
+      "Decentralized control plane for container deployment on edge micro-units",
+      "Sandboxed execution loops utilizing lightweight WebAssembly runtimes",
+      "High-speed communication lines utilizing NATS pub/sub message brokers",
+      "Real-time robotic state and joint velocity tracking dashboards"
     ],
     techStack: ["Rust", "WebAssembly", "NATS", "Prometheus", "Kubernetes"],
     links: {
-      demo: "https://demo.apex.siddhesh.space",
-      source: "https://github.com/siddheshmoon/apex-core"
+      demo: "https://investo-six.vercel.app/",
+      source: "https://github.com/moon908/investing_advice"
     },
     image: "/apex_core.jpg",
     theme: {
@@ -216,7 +216,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {projects.map((project, idx) => {
             const displayImage = images[project.id] || project.image;
             return (
@@ -242,10 +242,10 @@ export default function Projects() {
                   </div>
 
                   {/* Card Content Layout */}
-                  <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start flex-1">
+                  <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-1 gap-6 items-start flex-1">
                     
                     {/* Left Side: Project Image Preview */}
-                    <div className="md:col-span-6 relative w-full h-44 rounded-lg overflow-hidden border border-neutral-800 bg-neutral-950/40 group/upload cursor-pointer">
+                    <div className="md:col-span-6 lg:col-span-1 relative w-full h-44 rounded-lg overflow-hidden border border-neutral-800 bg-neutral-950/40 group/upload cursor-pointer">
                       {displayImage ? (
                         <>
                           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -279,7 +279,7 @@ export default function Projects() {
                     </div>
 
                     {/* Right Side: Details & Description */}
-                    <div className="md:col-span-6 flex flex-col items-start space-y-4">
+                    <div className="md:col-span-6 lg:col-span-1 flex flex-col items-start space-y-4">
                       {/* Circle Icon */}
                       <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${project.theme.iconBg}`}>
                         {project.id === "PRJ-001" && (

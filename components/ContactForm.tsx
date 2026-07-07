@@ -83,7 +83,7 @@ export default function ContactForm() {
               </div>
               <div className="flex justify-between">
                 <span className="text-neutral-500">LOCATION:</span>
-                <span>Maharashtra ,India</span>
+                <span>Maharashtra, India</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-neutral-500">EMAIL_TUNNEL:</span>

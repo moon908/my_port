@@ -22,6 +22,7 @@ interface Approach {
   phases: ApproachPhase[];
   metrics: ApproachMetric[];
   svgIcon: React.ReactNode;
+  pagerUrl: string;
 }
 
 export default function ManagementApproaches() {
@@ -31,46 +32,47 @@ export default function ManagementApproaches() {
     {
       id: "APP-001",
       category: "PLANNING",
-      ref: "MBSE-CORE",
-      title: "Model-Based Systems Planning",
-      description: "Decomposing complex aerospace software architecture into verified requirements and deterministic interfaces. We construct comprehensive digital twins and interface control structures prior to physical synthesis.",
-      codeHeader: "// SYSTEM_ARCH: MBSE_PARADIGM",
+      ref: "HUB-OPS",
+      title: "Last-Mile Operations Hub, E-commerce",
+      description: "Last-mile delivery is the most expensive stage of logistics, yet it is often managed reactively. Inefficient routing, manual processes, poor asset utilization, and last-minute changes cause delivery delays, higher return-to-sender (RTS) rates, increased costs, and reduced customer satisfaction, especially during peak demand.",
+      codeHeader: "// HUB_LOGISTICS: LAST_MILE_DISPATCH",
+      pagerUrl: "/pager/pager_lastmile_process.pdf",
       metrics: [
-        { label: "VERIFICATION_COVERAGE", value: "100.0%" },
-        { label: "INTERFACE_DRIFT_RATE", value: "0.00%" }
+        { label: "DISPATCH_LATENCY", value: "< 4.2 Min" },
+        { label: "ROUTE_EFFICIENCY", value: "98.7%" }
       ],
       phases: [
-        { name: "Phase 01: Requirement Traceability", desc: "Formal mapping of every software function back to payload constraint vectors." },
-        { name: "Phase 02: Interface Control (ICD)", desc: "Strict verification contracts for all module interfaces preventing boundary friction." },
-        { name: "Phase 03: Digital Twin Simulation", desc: "Running system binaries in virtual environments to catch structural conflicts early." }
+        { name: "Phase 01: Route Optimization", desc: "Implementing machine learning models for dynamic route planning to eliminate manual dispatch errors." },
+        { name: "Phase 02: Capacity Allocation", desc: "Maximizing asset utilization through automated vehicle capacity matching and dynamic scheduling." },
+        { name: "Phase 03: RTS Minimization", desc: "Enforcing delivery window adjustments and digital proof-of-delivery to actively reduce return rates." }
       ],
       svgIcon: (
         <svg viewBox="0 0 200 120" className="w-full h-full stroke-violet-500/80 fill-none stroke-[1.5]" xmlns="http://www.w3.org/2000/svg">
           {/* Blueprint background grid */}
           <path d="M 0 20 L 200 20 M 0 60 L 200 60 M 0 100 L 200 100 M 40 0 L 40 120 M 100 0 L 100 120 M 160 0 L 160 120" className="stroke-neutral-800/40" strokeDasharray="2 2" />
 
-          {/* System Nodes */}
-          <rect x="25" y="45" width="30" height="30" rx="3" className="fill-neutral-950 stroke-violet-500" />
-          <text x="40" y="63" className="fill-violet-400 font-mono text-[8px] font-bold text-center" textAnchor="middle">SYS_A</text>
+          {/* Central Hub */}
+          <rect x="85" y="45" width="30" height="30" rx="3" className="fill-neutral-950 stroke-violet-500" />
+          <text x="100" y="63" className="fill-violet-400 font-mono text-[8px] font-bold text-center" textAnchor="middle">HUB_01</text>
 
-          <rect x="85" y="15" width="30" height="30" rx="3" className="fill-neutral-950 stroke-violet-500" />
-          <text x="100" y="33" className="fill-violet-400 font-mono text-[8px] font-bold text-center" textAnchor="middle">SYS_B</text>
+          {/* Satellites / Destinations */}
+          <circle cx="30" cy="30" r="8" className="fill-neutral-950 stroke-violet-500/60" />
+          <text x="30" y="33" className="fill-neutral-400 font-mono text-[7px] text-center" textAnchor="middle">D1</text>
 
-          <rect x="85" y="75" width="30" height="30" rx="3" className="fill-neutral-950 stroke-violet-500" />
-          <text x="100" y="93" className="fill-violet-400 font-mono text-[8px] font-bold text-center" textAnchor="middle">SYS_C</text>
+          <circle cx="30" cy="90" r="8" className="fill-neutral-950 stroke-violet-500/60" />
+          <text x="30" y="93" className="fill-neutral-400 font-mono text-[7px] text-center" textAnchor="middle">D2</text>
 
-          <rect x="145" y="45" width="30" height="30" rx="3" className="fill-neutral-950 stroke-violet-500" />
-          <text x="160" y="63" className="fill-violet-400 font-mono text-[8px] font-bold text-center" textAnchor="middle">SYS_D</text>
+          <circle cx="170" cy="60" r="8" className="fill-neutral-950 stroke-violet-500/60" />
+          <text x="170" y="63" className="fill-neutral-400 font-mono text-[7px] text-center" textAnchor="middle">D3</text>
 
-          {/* Connections */}
-          <path d="M 55 60 L 85 30" className="stroke-violet-500/80" strokeDasharray="3 3" />
-          <path d="M 55 60 L 85 90" className="stroke-violet-500/80" />
-          <path d="M 115 30 L 145 60" className="stroke-violet-500/80" />
-          <path d="M 115 90 L 145 60" className="stroke-violet-500/80" strokeDasharray="3 3" />
+          {/* Route lines */}
+          <path d="M 85 55 L 38 33" className="stroke-violet-500/40" strokeDasharray="3 3" />
+          <path d="M 85 65 L 38 87" className="stroke-violet-500/40" strokeDasharray="3 3" />
+          <path d="M 115 60 L 162 60" className="stroke-violet-500" />
 
-          {/* Diagnostic Pulse */}
-          <circle r="3" className="fill-violet-400 animate-ping">
-            <animateMotion dur="3s" repeatCount="indefinite" path="M 55 60 L 85 90 L 145 60" />
+          {/* Dynamic delivery pulse */}
+          <circle r="2.5" className="fill-violet-400 animate-ping">
+            <animateMotion dur="2.5s" repeatCount="indefinite" path="M 115 60 L 162 60" />
           </circle>
         </svg>
       )
@@ -78,99 +80,83 @@ export default function ManagementApproaches() {
     {
       id: "APP-002",
       category: "RESEARCH",
-      ref: "SITL-VALIDATION",
-      title: "Simulation-In-The-Loop Research",
-      description: "Testing theoretical orbital maneuvers and machine learning telemetry models inside high-fidelity environments. We ensure mathematical correctness translates seamlessly to bare-metal target hardware.",
-      codeHeader: "// RES_LOGS: DYNAMIC_SIMULATION",
+      ref: "AUTO-SCM",
+      title: "Supply Chain Automotive Assembly",
+      description: "Door assembly is a critical bottleneck in automotive manufacturing. Current operations rely on manual part logistics, unpredictable supply arrivals, and labor-intensive station setups. High defect rates due to misaligned parts, missing fasteners, or incorrect door variants (LH/RH, trim levels) cause rework, line stoppages, and warranty claims. Peak production targets are rarely met due to assembly delays and supply chain inefficiencies. Traceability gaps lead to quality escapes and difficulty root-causing assembly failures.",
+      codeHeader: "// ASSEMBLY_LINE: JIT_SYNCHRONIZATION",
+      pagerUrl: "/pager/pager_door_car.pdf",
       metrics: [
-        { label: "PREDICTION_ACCURACY", value: "99.4%" },
-        { label: "INFERENCE_LATENCY", value: "0.85ms" }
+        { label: "LINE_DOWNTIME", value: "0.00%" },
+        { label: "BUFFER_ACCURACY", value: "99.9%" }
       ],
       phases: [
-        { name: "Phase 01: Theoretical Bounds", desc: "Proving numerical convergence limits using Lyapunov stability criteria." },
-        { name: "Phase 02: Software-in-the-Loop", desc: "Simulating high-density swarm trajectories with random wind/J2 perturbations." },
-        { name: "Phase 03: Hardware-in-the-Loop", desc: "Deploying and profiling execution footprints on physical ARM Cortex microcontrollers." }
+        { name: "Phase 01: Parts Synchronization", desc: "Aligning sequence-based component delivery times with assembly schedules to reduce setup delays." },
+        { name: "Phase 02: Variant & Fastener Checks", desc: "Utilizing vision-guided validation to prevent LH/RH door mismatches and missing fasteners." },
+        { name: "Phase 03: Quality Traceability Logs", desc: "Recording digital torque, weld, and fitment signatures to avoid quality escapes and speed root-causing." }
       ],
       svgIcon: (
         <svg viewBox="0 0 200 120" className="w-full h-full stroke-violet-500/80 fill-none stroke-[1.5]" xmlns="http://www.w3.org/2000/svg">
           <path d="M 0 20 L 200 20 M 0 60 L 200 60 M 0 100 L 200 100 M 40 0 L 40 120 M 100 0 L 100 120 M 160 0 L 160 120" className="stroke-neutral-800/40" strokeDasharray="2 2" />
 
-          {/* Signal / Simulation wave */}
-          <path d="M 10 90 Q 50 10 90 90 T 170 90" className="stroke-neutral-700/80" strokeDasharray="4 2" />
-          <path d="M 10 90 Q 50 20 90 85 T 170 90" className="stroke-violet-500" />
+          {/* Conveyor Line */}
+          <line x1="20" y1="70" x2="180" y2="70" className="stroke-neutral-700" strokeWidth="2" />
+          
+          {/* Conveyor Rollers */}
+          <circle cx="40" cy="70" r="4" className="fill-neutral-950 stroke-neutral-500" />
+          <circle cx="80" cy="70" r="4" className="fill-neutral-950 stroke-neutral-500" />
+          <circle cx="120" cy="70" r="4" className="fill-neutral-950 stroke-neutral-500" />
+          <circle cx="160" cy="70" r="4" className="fill-neutral-950 stroke-neutral-500" />
 
-          {/* Data Points */}
-          <circle cx="50" cy="20" r="3" className="fill-violet-500" />
-          <circle cx="90" cy="85" r="3" className="fill-violet-400" />
-          <circle cx="130" cy="25" r="3" className="fill-violet-500" />
+          {/* Robotic Arm */}
+          <path d="M 100 20 L 100 45 L 85 60" className="stroke-violet-500" strokeWidth="2" />
+          <circle cx="100" cy="20" r="3" className="fill-violet-400" />
+          <circle cx="100" cy="45" r="2.5" className="fill-violet-400" />
+          <path d="M 80 57 L 85 60 L 82 65" className="stroke-violet-400" />
 
-          {/* Sweep Line */}
-          <line x1="90" y1="0" x2="90" y2="120" className="stroke-violet-500/30" />
-          <text x="94" y="15" className="fill-violet-400/70 font-mono text-[7px]">TIME: 0.85ms</text>
+          {/* Assembling component */}
+          <rect x="75" y="65" width="10" height="8" rx="1" className="fill-neutral-950 stroke-violet-500" />
+
+          <text x="140" y="35" className="fill-violet-400/70 font-mono text-[7px]">JIT_ACTIVE</text>
+          <line x1="100" y1="20" x2="135" y2="33" className="stroke-violet-500/20" strokeDasharray="2 2" />
         </svg>
       )
     },
     {
       id: "APP-003",
       category: "MANAGEMENT",
-      ref: "AGILE-GOV",
-      title: "Decentralized & Agile Operations",
-      description: "Managing interdisciplinary workflows with high autonomy. We focus on short iteration loops, automated feedback metrics, and contract-first API alignment to reduce team-to-team integration delay.",
-      codeHeader: "// EXEC_LOGS: COLLABORATIVE_AGILE",
+      ref: "OPS-EXCELLENCE",
+      title: "Operations Team Excellence",
+      description: "Fast-paced operations in fulfillment centers, dark stores, and logistics hubs often rely on verbal task assignments or whiteboards, making coordination reactive and inefficient. Poor visibility, shifting priorities, scattered data, and ineffective shift handoffs lead to missed targets, higher overtime, safety risks, and operator burnout.",
+      codeHeader: "// PERFORMANCE: TEAM_OPTIMIZATION",
+      pagerUrl: "/pager/pager_team_management.pdf",
       metrics: [
-        { label: "INTEGRATION_LATENCY", value: "< 2.5 Hrs" },
-        { label: "DEVELOPER_AUTONOMY", value: "9.8 / 10" }
+        { label: "FRONT_LINE_SAFETY", value: "100%" },
+        { label: "RESPONSE_SPEED", value: "< 1.5 Mins" }
       ],
       phases: [
-        { name: "Phase 01: Micro-Sprints & ICDs", desc: "Scoping tasks into 1-week cycles anchored by strict Interface Control Documents." },
-        { name: "Phase 02: Continuous Integration (CI)", desc: "Immediate testing on physical sandbox configurations when code changes." },
-        { name: "Phase 03: Post-Mortem Analytics", desc: "Automated analysis of commit velocity and structural errors to optimize future sprints." }
+        { name: "Phase 01: Centralized Digital Board", desc: "Replacing whiteboards and verbal handoffs with real-time digital priority queues for clear operations visibility." },
+        { name: "Phase 02: Dynamic Rebalancing", desc: "Orchestrating active labor and workload shifts dynamically to prevent operator burnout and overtime." },
+        { name: "Phase 03: Unified Shift Handoffs", desc: "Standardizing shift transition logs to document open bottlenecks, safety audits, and task handovers." }
       ],
       svgIcon: (
         <svg viewBox="0 0 200 120" className="w-full h-full stroke-violet-500/80 fill-none stroke-[1.5]" xmlns="http://www.w3.org/2000/svg">
           <path d="M 0 20 L 200 20 M 0 60 L 200 60 M 0 100 L 200 100 M 40 0 L 40 120 M 100 0 L 100 120 M 160 0 L 160 120" className="stroke-neutral-800/40" strokeDasharray="2 2" />
 
-          {/* Recursive flow / loop */}
-          <path d="M 100 60 C 60 10, 140 10, 100 60" className="stroke-violet-500" />
-          <path d="M 100 60 C 60 110, 140 110, 100 60" className="stroke-violet-500" strokeDasharray="4 2" />
+          {/* Performance chart line */}
+          <path d="M 20 90 L 60 80 L 100 45 L 140 35 L 180 15" className="stroke-violet-500" strokeWidth="2" />
+          
+          {/* Chart Nodes */}
+          <circle cx="20" cy="90" r="3" className="fill-neutral-950 stroke-violet-400" />
+          <circle cx="60" cy="80" r="3" className="fill-neutral-950 stroke-violet-400" />
+          <circle cx="100" cy="45" r="3" className="fill-neutral-950 stroke-violet-400" />
+          <circle cx="140" cy="35" r="3" className="fill-neutral-950 stroke-violet-400" />
+          <circle cx="180" cy="15" r="4" className="fill-violet-400" />
 
-          {/* Arrowheads */}
-          <path d="M 104 22 L 96 22 L 100 15 Z" className="fill-violet-500 stroke-none" />
-          <path d="M 96 98 L 104 98 L 100 105 Z" className="fill-violet-500 stroke-none" />
+          {/* Target dotted limit */}
+          <line x1="20" y1="30" x2="180" y2="30" className="stroke-neutral-700/80" strokeDasharray="3 3" />
+          <text x="25" y="25" className="fill-neutral-500 font-mono text-[7px]">GOAL_SLA</text>
 
-          <circle cx="100" cy="60" r="6" className="fill-neutral-950 stroke-violet-400" />
-          <text x="100" y="63" className="fill-violet-300 font-mono text-[7px] font-bold" textAnchor="middle">GIT</text>
-        </svg>
-      )
-    },
-    {
-      id: "APP-004",
-      category: "RISK",
-      ref: "FMECA-MITIGATE",
-      title: "Failure Modes & Risk Mitigation",
-      description: "Formulating rigorous defensive software checks and system-level fail-safes. We design systems to survive telemetry losses, bit-flips, and physical sub-system degradation.",
-      codeHeader: "// FAIL_SAFE: RISK_MITIGATION",
-      metrics: [
-        { label: "PAYLOAD_REDUNDANCY", value: "3N Active" },
-        { label: "SYSTEM_MTBF", value: "> 50k Hrs" }
-      ],
-      phases: [
-        { name: "Phase 01: FMECA Fault Logging", desc: "Registering every potential component crash alongside its severity score." },
-        { name: "Phase 02: Dynamic Fault Injection", desc: "Purposely disabling telemetry pathways in virtual runs to observe fallback behavior." },
-        { name: "Phase 03: Safe-State Initialization", desc: "Configuring firmware to lock hardware into stable, low-power states on warning flags." }
-      ],
-      svgIcon: (
-        <svg viewBox="0 0 200 120" className="w-full h-full stroke-violet-500/80 fill-none stroke-[1.5]" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 0 20 L 200 20 M 0 60 L 200 60 M 0 100 L 200 100 M 40 0 L 40 120 M 100 0 L 100 120 M 160 0 L 160 120" className="stroke-neutral-800/40" strokeDasharray="2 2" />
-
-          {/* Shield Outline */}
-          <path d="M 70 30 L 130 30 L 130 65 C 130 90, 100 105, 100 105 C 100 105, 70 90, 70 65 Z" className="fill-neutral-950 stroke-violet-500" />
-
-          {/* Intermittent sweep scan */}
-          <line x1="75" y1="50" x2="125" y2="50" className="stroke-violet-400/40 animate-pulse" />
-          <line x1="75" y1="70" x2="125" y2="70" className="stroke-violet-400/40 animate-pulse" />
-
-          <text x="100" y="64" className="fill-violet-400 font-mono text-[9px] font-bold" textAnchor="middle">SECURE</text>
+          <text x="140" y="55" className="fill-violet-400 font-mono text-[8px] font-bold">99.8%</text>
         </svg>
       )
     }
@@ -258,16 +244,15 @@ export default function ManagementApproaches() {
                   </p>
 
                   <div className="pt-2 pb-4">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        console.log(`Open one-pager clicked for: ${activeApproach.id}`);
-                      }}
+                    <a
+                      href={activeApproach.pagerUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex px-4 py-2 bg-violet-950/40 hover:bg-violet-900/40 border border-violet-500/50 hover:border-violet-500 rounded-lg text-xs font-mono text-violet-400 hover:text-violet-300 font-semibold items-center space-x-2 transition-all duration-300 shadow-[0_0_15px_rgba(139,92,246,0.05)] hover:shadow-[0_0_20px_rgba(139,92,246,0.15)] group cursor-pointer"
                     >
                       <span>OPEN_ONE_PAGER</span>
                       <span className="transform translate-y-[0.5px] group-hover:translate-x-0.5 transition-transform select-none">→</span>
-                    </button>
+                    </a>
                   </div>
 
                   <div className="space-y-3">

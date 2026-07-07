@@ -72,7 +72,7 @@ export default function Footer() {
               <span className="text-neutral-400">SIDDHESH_MOON</span>
             </div>
             <p className="text-xs text-neutral-400 max-w-sm leading-relaxed">
-              Multi-disciplinary engineer focusing on satellite telemetry dashboards, secure mesh networks, and high-performance temporal mapping systems.
+              Technology professional specializing in Project management, AI Engineering, automation, and data-driven team coordination frameworks to optimizing efficent problem solving approch.
             </p>
           </div>
 
@@ -88,13 +88,18 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#research" className="hover:text-violet-400 transition-colors">
-                  &gt; ./research
+                <a href="#about" className="hover:text-violet-400 transition-colors">
+                  &gt; ./about
                 </a>
               </li>
               <li>
                 <a href="#projects" className="hover:text-violet-400 transition-colors">
                   &gt; ./projects
+                </a>
+              </li>
+              <li>
+                <a href="#methodology" className="hover:text-violet-400 transition-colors">
+                  &gt; ./methodology
                 </a>
               </li>
               <li>

@@ -112,7 +112,7 @@ export default function Footer() {
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm sm:text-base font-mono">
               <a
-                href="https://www.linkedin.com/in/siddhesh-moon-92651a230/"
+                href="https://www.linkedin.com/in/siddhesh-moon/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-violet-400 flex items-center space-x-2.5 group transition-colors"
@@ -133,7 +133,7 @@ export default function Footer() {
                 <span>LINKEDIN_LINK</span>
               </a>
               <a
-                href="/resume.pdf"
+                href="/resume/Siddhesh_GenResume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-violet-400 flex items-center space-x-2.5 group transition-colors"

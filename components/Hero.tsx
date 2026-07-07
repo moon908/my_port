@@ -20,8 +20,8 @@ export default function Home() {
         lon: "123.4091° W",
     });
 
-    const text1 = "👋, my name is Siddhesh Moon";
-    const text2 = "Multi-Disciplinary Engineer";
+    const text1 = "👋, My Name is Siddhesh Moon";
+    const text2 = "I'm a Engineer";
 
     useEffect(() => {
         let index1 = 0;

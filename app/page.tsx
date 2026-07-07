@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
 import SkillsMarquee from "@/components/SkillsMarquee";
-import ResearchPapers from "@/components/ResearchPapers";
+import AboutMe from "@/components/AboutMe";
 import ManagementApproaches from "@/components/ManagementApproaches";
 import Projects from "@/components/Projects";
 import BentoShowcase from "@/components/BentoShowcase";
@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SkillsMarquee />
-      <ResearchPapers />
+      <AboutMe />
       <Projects />
       <ManagementApproaches />
       <BentoShowcase />

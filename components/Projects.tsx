@@ -54,6 +54,32 @@ const projects: Project[] = [
   {
     id: "PRJ-002",
     code: "02",
+    title: "Converso AI",
+    subtitle: "AI Voice Tutor",
+    status: "Live",
+    description: "An intelligent AI-powered voice tutor enabling real-time conversational learning through natural speech interactions.",
+    features: [
+      "Real-time voice transcription and natural language understanding pipeline",
+      "Adaptive AI tutoring engine with personalized learning path generation",
+      "Multi-topic conversational sessions with context-aware dialogue management",
+      "Progress tracking and performance analytics across learning sessions"
+    ],
+    techStack: ["Next.js", "OpenAI API", "Web Speech API", "TypeScript", "Tailwind CSS"],
+    links: {
+      demo: "https://ai-tutor-black-ten.vercel.app/",
+      source: "https://github.com/moon908/AI-Tutor"
+    },
+    image: "/project/project2.jpeg",
+    theme: {
+      border: "hover:border-amber-500/50 hover:shadow-[0_0_35px_rgba(245,158,11,0.08)]",
+      badge: "border-amber-500/30 text-amber-400 bg-amber-950/20",
+      iconBg: "bg-amber-950/30 border border-amber-500/20 text-amber-400",
+      text: "text-amber-400 group-hover:text-amber-300"
+    }
+  },
+  {
+    id: "PRJ-003",
+    code: "03",
     title: "ProjectFlow",
     subtitle: "Project Management",
     status: "Live",
@@ -69,7 +95,7 @@ const projects: Project[] = [
       demo: "https://projectflow-beryl-theta.vercel.app",
       source: "https://github.com/moon908/project_mgmt"
     },
-    image: "/project/project2.jpeg",
+    image: "/project/project3.jpeg",
     theme: {
       border: "hover:border-blue-500/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.08)]",
       badge: "border-blue-500/30 text-blue-400 bg-blue-950/20",
@@ -78,8 +104,8 @@ const projects: Project[] = [
     }
   },
   {
-    id: "PRJ-003",
-    code: "03",
+    id: "PRJ-004",
+    code: "04",
     title: "AcuVad",
     subtitle: "Voice Activity Detector",
     status: "Live",
@@ -95,7 +121,7 @@ const projects: Project[] = [
       demo: "https://vad-detail.vercel.app",
       source: "https://github.com/moon908/vad_detail"
     },
-    image: "/project/project3.jpeg",
+    image: "/project/project4.jpeg",
     theme: {
       border: "hover:border-teal-500/50 hover:shadow-[0_0_35px_rgba(20,184,166,0.08)]",
       badge: "border-teal-500/30 text-teal-400 bg-teal-950/20",
@@ -104,8 +130,8 @@ const projects: Project[] = [
     }
   },
   {
-    id: "PRJ-004",
-    code: "04",
+    id: "PRJ-005",
+    code: "05",
     title: "Spectra Analysis",
     subtitle: "Automatic Reporting Tool",
     status: "Live",
@@ -121,7 +147,7 @@ const projects: Project[] = [
       demo: "https://spectrareport-three.vercel.app",
       source: "https://github.com/moon908/reporting_tool"
     },
-    image: "/project/project4.jpeg",
+    image: "/project/project5.jpeg",
     theme: {
       border: "hover:border-fuchsia-500/50 hover:shadow-[0_0_35px_rgba(217,70,239,0.08)]",
       badge: "border-fuchsia-500/30 text-fuchsia-400 bg-fuchsia-950/20",
@@ -130,8 +156,8 @@ const projects: Project[] = [
     }
   },
   {
-    id: "PRJ-005",
-    code: "05",
+    id: "PRJ-006",
+    code: "06",
     title: "Investo",
     subtitle: "Intelligent Investing Application",
     status: "Live",
@@ -147,7 +173,7 @@ const projects: Project[] = [
       demo: "https://investo-six.vercel.app/",
       source: "https://github.com/moon908/investing_advice"
     },
-    image: "/project/project5.jpeg",
+    image: "/project/project6.jpeg",
     theme: {
       border: "hover:border-rose-500/50 hover:shadow-[0_0_35px_rgba(244,63,94,0.08)]",
       badge: "border-rose-500/30 text-rose-400 bg-rose-950/20",
@@ -228,27 +254,27 @@ export default function Projects() {
                         )}
                         {project.id === "PRJ-002" && (
                           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125v-3.75m16.5 0v3.75" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
                           </svg>
                         )}
                         {project.id === "PRJ-003" && (
                           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.284 16.284A3 3 0 0 0 12 15a3 3 0 0 0 3.716 1.284M5.457 13.457a6 6 0 0 1 8.543 0m-8.543 0a6 6 0 0 0 8.543 0M2.63 10.63a9 9 0 0 1 12.74 0m-12.74 0a9 9 0 0 0 12.74 0M12 18h.008v.008H12V18Z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125v-3.75m16.5 0v3.75" />
                           </svg>
                         )}
                         {project.id === "PRJ-004" && (
                           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.284 16.284A3 3 0 0 0 12 15a3 3 0 0 0 3.716 1.284M5.457 13.457a6 6 0 0 1 8.543 0m-8.543 0a6 6 0 0 0 8.543 0M2.63 10.63a9 9 0 0 1 12.74 0m-12.74 0a9 9 0 0 0 12.74 0M12 18h.008v.008H12V18Z" />
                           </svg>
                         )}
                         {project.id === "PRJ-005" && (
                           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                           </svg>
                         )}
                         {project.id === "PRJ-006" && (
                           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M12 3v1.5m3.75-1.5v1.5M19 12h1.5m-1.5 3.75H21m-2-7.5H21M3 12h1.5m-.5 3.75H5m-2-7.5H5m3.75 13.5v1.5M12 17.25v1.5m3.75-1.5v1.5M6 6h12v12H6V6Z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Z" />
                           </svg>
                         )}
                       </div>

@@ -92,7 +92,7 @@ const projects: Project[] = [
     ],
     techStack: ["React", "Python", "SQLite", "Chart.js", "Tailwind CSS"],
     links: {
-      demo: "https://acuvad.vercel.app",
+      demo: "https://vad-detail.vercel.app",
       source: "https://github.com/moon908/vad_detail"
     },
     image: "/project/project3.jpeg",
@@ -118,10 +118,10 @@ const projects: Project[] = [
     ],
     techStack: ["TypeScript", "WebGL", "Apache Kafka", "AWS Lambda", "Node.js"],
     links: {
-      demo: "https://spectrareport.vercel.app",
+      demo: "https://spectrareport-three.vercel.app",
       source: "https://github.com/moon908/reporting_tool"
     },
-    image: "/chronos_engine.jpg",
+    image: "/project/project4.jpeg",
     theme: {
       border: "hover:border-fuchsia-500/50 hover:shadow-[0_0_35px_rgba(217,70,239,0.08)]",
       badge: "border-fuchsia-500/30 text-fuchsia-400 bg-fuchsia-950/20",
@@ -155,32 +155,6 @@ const projects: Project[] = [
       text: "text-rose-400 group-hover:text-rose-300"
     }
   },
-  {
-    id: "PRJ-006",
-    code: "06",
-    title: "Robotics Workflow",
-    subtitle: "Robotics Workflow Hub",
-    status: "Live",
-    description: "A decentralized edge orchestration hub coordinating serverless command workflows on robotic devices.",
-    features: [
-      "Decentralized control plane for container deployment on edge micro-units",
-      "Sandboxed execution loops utilizing lightweight WebAssembly runtimes",
-      "High-speed communication lines utilizing NATS pub/sub message brokers",
-      "Real-time robotic state and joint velocity tracking dashboards"
-    ],
-    techStack: ["Rust", "WebAssembly", "NATS", "Prometheus", "Kubernetes"],
-    links: {
-      demo: "https://investo-six.vercel.app/",
-      source: "https://github.com/moon908/investing_advice"
-    },
-    image: "/apex_core.jpg",
-    theme: {
-      border: "hover:border-cyan-500/50 hover:shadow-[0_0_35px_rgba(6,182,212,0.08)]",
-      badge: "border-cyan-500/30 text-cyan-400 bg-cyan-950/20",
-      iconBg: "bg-cyan-950/30 border border-cyan-500/20 text-cyan-400",
-      text: "text-cyan-400 group-hover:text-cyan-300"
-    }
-  }
 ];
 
 export default function Projects() {

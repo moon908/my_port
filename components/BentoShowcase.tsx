@@ -17,7 +17,7 @@ export default function BentoShowcase() {
             // PORTFOLIO: DESIGN_SHOWCASE
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-100 font-mono">
-            UI/UX & Web Design Bento
+            UI/UX & Web Design
           </h2>
           <p className="text-sm text-neutral-400 font-mono">
             A curated grid showcase of my custom UI/UX and web layout designs.

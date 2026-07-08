@@ -532,7 +532,7 @@ export default function AboutMe() {
             <div className="reveal reveal-slide-up reveal-delay-200 grid grid-cols-2 sm:grid-cols-4 gap-4">
               
               {/* Card 1: Projects Delivered */}
-              <div className="bg-neutral-900/30 border border-neutral-900/60 p-4.5 rounded-2xl flex flex-col space-y-2 hover:border-violet-500/20 transition-all duration-300 hover:shadow-[0_0_15px_rgba(139,92,246,0.03)]">
+              <div className="bg-neutral-900/30 border border-neutral-900/60 p-4.5 rounded-2xl flex flex-col space-y-2 hover:border-violet-500/20 transition-all duration-300 hover:shadow-[0_0_15px_rgba(139,92,246,0.03)] sm:col-span-2 lg:col-span-1">
                 <div className="w-7 h-7 rounded-lg bg-neutral-950/60 border border-neutral-800/80 flex items-center justify-center shrink-0">
                   <svg className="w-4 h-4 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.59 2.58a14.98 14.98 0 0 0-6.16 12.12A14.98 14.98 0 0 0 9.59 20.88v-4.8m5.84-1.71a3 3 0 1 1-5.84 0M19.5 4.5h.008v.008H19.5V4.5Z" />
@@ -544,6 +544,30 @@ export default function AboutMe() {
                   </div>
                   <div className="text-[9px] font-semibold text-neutral-300 uppercase tracking-wide">Projects Delivered</div>
                   <div className="text-[8px] text-neutral-500">End-to-end solutions</div>
+                </div>
+                {/* Mini project list */}
+                <div className="pt-2 border-t border-neutral-800/40 space-y-1.5">
+                  {[
+                    { name: "Atheria AI", href: "https://knowyourcrop.vercel.app" },
+                    { name: "ProjectFlow", href: "https://projectflow-beryl-theta.vercel.app" },
+                    { name: "AcuVad", href: "https://vad-detail.vercel.app" },
+                    { name: "Spectra Analysis", href: "https://spectrareport-three.vercel.app" },
+                    { name: "Investo", href: "https://investo-six.vercel.app/" },
+                  ].map((p) => (
+                    <a
+                      key={p.name}
+                      href={p.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between group/proj text-[9px] font-mono text-neutral-500 hover:text-violet-400 transition-colors duration-200"
+                    >
+                      <span className="flex items-center space-x-1.5">
+                        <span className="w-1 h-1 rounded-full bg-violet-500/50 group-hover/proj:bg-violet-400 transition-colors" />
+                        <span>{p.name}</span>
+                      </span>
+                      <span className="opacity-0 group-hover/proj:opacity-100 transition-opacity">↗</span>
+                    </a>
+                  ))}
                 </div>
               </div>
 

@@ -180,12 +180,12 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="flex flex-wrap justify-center gap-8 lg:gap-12">
           {projects.map((project, idx) => {
             return (
               <div
                 key={project.id}
-                className={`reveal reveal-slide-up reveal-delay-${(idx + 1) * 100} flex flex-col justify-between bg-neutral-900/15 border border-neutral-900/80 backdrop-blur-md p-6 sm:p-8 rounded-2xl transition-all duration-300 ${project.theme.border} group relative`}
+                className={`reveal reveal-slide-up reveal-delay-${(idx + 1) * 100} w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-2rem)] flex flex-col justify-between bg-neutral-900/15 border border-neutral-900/80 backdrop-blur-md p-6 sm:p-8 rounded-2xl transition-all duration-300 ${project.theme.border} group relative`}
               >
                 {/* Upper Section */}
                 <div className="flex flex-col flex-1">

@@ -66,7 +66,7 @@ const projects: Project[] = [
     ],
     techStack: ["Next.js", "OpenAI API", "Web Speech API", "TypeScript", "Tailwind CSS"],
     links: {
-      demo: "https://ai-tutor-black-ten.vercel.app/",
+      demo: "https://conversotutor.vercel.app",
       source: "https://github.com/moon908/AI-Tutor"
     },
     image: "/project/project2.jpeg",

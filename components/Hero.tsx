@@ -69,7 +69,7 @@ export default function Home() {
     }, []);
 
     return (
-        <main id="hero" className="min-h-screen w-full bg-neutral-950 text-neutral-100 font-jetbrains selection:bg-blue-500/30 selection:text-blue-200 relative flex flex-col justify-between overflow-x-hidden">
+        <main id="hero" className="min-h-screen w-full bg-neutral-950 text-neutral-100 font-jetbrains selection:bg-blue-500/30 selection:text-blue-200 relative flex flex-col justify-center overflow-x-hidden">
             {/* 3D Earth Background canvas - absolute and z-0 */}
             <div className="reveal reveal-scale absolute inset-y-0 left-0 w-full lg:w-[145%] z-0 overflow-hidden hidden lg:block" style={{ transitionDuration: "1500ms" }}>
                 <EarthGlobe />

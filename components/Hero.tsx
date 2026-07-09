@@ -69,7 +69,7 @@ export default function Home() {
     }, []);
 
     return (
-        <main id="hero" className="min-h-screen w-full bg-neutral-950 text-neutral-100 font-jetbrains selection:bg-blue-500/30 selection:text-blue-200 relative flex flex-col justify-center overflow-x-hidden">
+        <main id="hero" className="min-h-screen w-full bg-neutral-950 text-neutral-100 font-jetbrains selection:bg-blue-500/30 selection:text-blue-200 relative flex flex-col justify-center items-center overflow-x-hidden pt-20">
             {/* 3D Earth Background canvas - absolute and z-0 */}
             <div className="reveal reveal-scale absolute inset-y-0 left-0 w-full lg:w-[145%] z-0 overflow-hidden hidden lg:block" style={{ transitionDuration: "1500ms" }}>
                 <EarthGlobe />
@@ -80,10 +80,10 @@ export default function Home() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_40%_-20%,rgba(59,130,246,0.03),rgba(255,255,255,0))] pointer-events-none" />
 
             {/* Main Grid Layout Container - pointer-events-none to let drag reach the canvas */}
-            <div className="relative z-10 flex-1 max-w-7xl mx-auto w-full px-6 md:px-12 flex flex-col justify-center py-8 pointer-events-none">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pointer-events-none">
 
                 {/* Hero split layout */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center justify-items-center lg:justify-items-start my-auto py-6 w-full">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center justify-items-center lg:justify-items-start w-full">
 
                     {/* Left Column: Scientist Command Terminal - pointer-events-auto so user can interact */}
                     <div className="reveal reveal-slide-up lg:col-span-6 flex flex-col space-y-6 text-left pointer-events-auto bg-neutral-900/30 border border-neutral-800/80 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.8)] w-full max-w-lg mx-auto lg:mx-0" style={{ transitionDuration: "1200ms" }}>

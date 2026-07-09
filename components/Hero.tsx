@@ -69,7 +69,7 @@ export default function Home() {
     }, []);
 
     return (
-        <main id="hero" className="min-h-screen w-full bg-neutral-950 text-neutral-100 font-jetbrains selection:bg-blue-500/30 selection:text-blue-200 relative flex flex-col justify-center items-center overflow-x-hidden pt-20">
+        <main id="hero" className="min-h-[auto] lg:min-h-screen w-full bg-neutral-950 text-neutral-100 font-jetbrains selection:bg-blue-500/30 selection:text-blue-200 relative flex flex-col justify-center items-center overflow-x-hidden pt-28 pb-16 lg:pt-20 lg:pb-0">
             {/* 3D Earth Background canvas - absolute and z-0 */}
             <div className="reveal reveal-scale absolute inset-y-0 left-0 w-full lg:w-[145%] z-0 overflow-hidden hidden lg:block" style={{ transitionDuration: "1500ms" }}>
                 <EarthGlobe />
@@ -141,7 +141,7 @@ export default function Home() {
                     </div>
 
                     {/* Right Column: Centered 3D Globe placeholder - pointer-events-none to let dragging pass through */}
-                    <div className="lg:col-span-6 relative w-full h-[350px] sm:h-[450px] lg:h-[550px] flex items-center justify-center pointer-events-none">
+                    <div className="hidden lg:flex lg:col-span-6 relative w-full lg:h-[550px] items-center justify-center pointer-events-none">
                         {/* Empty space that allows click-through to the Earth behind it */}
                     </div>
 

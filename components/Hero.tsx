@@ -71,7 +71,7 @@ export default function Home() {
     return (
         <main id="hero" className="min-h-screen w-full bg-neutral-950 text-neutral-100 font-jetbrains selection:bg-blue-500/30 selection:text-blue-200 relative flex flex-col justify-between overflow-x-hidden">
             {/* 3D Earth Background canvas - absolute and z-0 */}
-            <div className="reveal reveal-scale absolute inset-y-0 left-0 w-full lg:w-[145%] z-0 overflow-hidden" style={{ transitionDuration: "1500ms" }}>
+            <div className="reveal reveal-scale absolute inset-y-0 left-0 w-full lg:w-[145%] z-0 overflow-hidden hidden lg:block" style={{ transitionDuration: "1500ms" }}>
                 <EarthGlobe />
             </div>
 
@@ -83,10 +83,10 @@ export default function Home() {
             <div className="relative z-10 flex-1 max-w-7xl mx-auto w-full px-6 md:px-12 flex flex-col justify-center py-8 pointer-events-none">
 
                 {/* Hero split layout */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center my-auto py-6 w-full">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center justify-items-center lg:justify-items-start my-auto py-6 w-full">
 
                     {/* Left Column: Scientist Command Terminal - pointer-events-auto so user can interact */}
-                    <div className="reveal reveal-slide-up lg:col-span-6 flex flex-col space-y-6 text-left pointer-events-auto bg-neutral-900/30 border border-neutral-800/80 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.8)] max-w-lg" style={{ transitionDuration: "1200ms" }}>
+                    <div className="reveal reveal-slide-up lg:col-span-6 flex flex-col space-y-6 text-left pointer-events-auto bg-neutral-900/30 border border-neutral-800/80 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.8)] w-full max-w-lg mx-auto lg:mx-0" style={{ transitionDuration: "1200ms" }}>
                         {/* Terminal Title Bar */}
                         <div className="flex items-center justify-between border-b border-neutral-800/80 pb-4 text-xs font-mono tracking-wider text-neutral-400">
                             <div className="flex items-center space-x-2">

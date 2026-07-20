@@ -54,20 +54,20 @@ const projects: Project[] = [
   {
     id: "PRJ-002",
     code: "02",
-    title: "Converso AI",
-    subtitle: "AI Voice Tutor",
+    title: "Orion Space",
+    subtitle: "Solar System Simulation",
     status: "Live",
-    description: "An intelligent AI-powered voice tutor enabling real-time conversational learning through natural speech interactions.",
+    description: "An interactive 3D solar system simulation application detailing planetary orbits, celestial mechanics, and space exploration visualization.",
     features: [
-      "Real-time voice transcription and natural language understanding pipeline",
-      "Adaptive AI tutoring engine with personalized learning path generation",
-      "Multi-topic conversational sessions with context-aware dialogue management",
-      "Progress tracking and performance analytics across learning sessions"
+      "Interactive 3D real-time rendering of planetary bodies and orbital physics",
+      "Detailed celestial body telemetry, orbital parameters, and astronomical information",
+      "Custom camera controls for smooth planetary navigation and space exploration",
+      "Responsive WebGL rendering powered by Three.js and modern Web technologies"
     ],
-    techStack: ["Next.js", "OpenAI API", "Web Speech API", "TypeScript", "Tailwind CSS"],
+    techStack: ["React", "Three.js", "WebGL", "TypeScript", "Tailwind CSS"],
     links: {
-      demo: "https://conversotutor.vercel.app",
-      source: "https://github.com/moon908/AI-Tutor"
+      demo: "https://orionspace.vercel.app/",
+      source: "https://github.com/moon908/orion"
     },
     image: "/project/project2.jpeg",
     theme: {
@@ -254,7 +254,7 @@ export default function Projects() {
                         )}
                         {project.id === "PRJ-002" && (
                           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a15.3 15.3 0 0 1-4-9 15.3 15.3 0 0 1 4-9 15.3 15.3 0 0 1 4 9 15.3 15.3 0 0 1-4 9Zm-8.6-4.5a15.3 15.3 0 0 1 17.2 0M3.4 7.5a15.3 15.3 0 0 1 17.2 0" />
                           </svg>
                         )}
                         {project.id === "PRJ-003" && (

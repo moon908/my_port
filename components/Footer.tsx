@@ -138,7 +138,7 @@ export default function Footer() {
                 <span>LINKEDIN_LINK</span>
               </a>
               <a
-                href="/resume/Siddhesh_GenResume.pdf"
+                href="/resume/Siddhesh_AiEng.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-violet-400 flex items-center space-x-2.5 group transition-colors"

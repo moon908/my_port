@@ -106,22 +106,22 @@ const projects: Project[] = [
   {
     id: "PRJ-004",
     code: "04",
-    title: "AcuVad",
-    subtitle: "Voice Activity Detector",
+    title: "VoxCommerce",
+    subtitle: "AI Voice Customer Care",
     status: "Live",
-    description: "An advanced Voice Activity Detector (VAD) system designed to identify and isolate speech in audio streams.",
+    description: "An AI-powered voice agent platform designed for e-commerce, offering automated customer service, real-time order processing, and dynamic voice support.",
     features: [
-      "Interactive live sensor drift calibration profiling views",
-      "Sub-millisecond data logging pipelines using optimized database indexes",
-      "Automatic anomaly identification and threshold alert triggers",
-      "Custom hardware-in-the-loop validation script runner console"
+      "Human-like conversational AI voice agent for 24/7 automated customer support",
+      "Real-time order tracking, cancellations, and product recommendations via voice",
+      "Advanced speech-to-text and intent classification with extremely low latency",
+      "Live sentiment analysis and seamless escalation to human agents when needed"
     ],
-    techStack: ["React", "Python", "SQLite", "Chart.js", "Tailwind CSS"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Daily.co", "OpenAI API"],
     links: {
-      demo: "https://vad-detail.vercel.app",
-      source: "https://github.com/moon908/vad_detail"
+      demo: "https://voxcommerce.vercel.app/",
+      source: "https://github.com/moon908/VoxCommerce"
     },
-    image: "/project/project4.jpeg",
+    image: "/project/project4.jpg",
     theme: {
       border: "hover:border-teal-500/50 hover:shadow-[0_0_35px_rgba(20,184,166,0.08)]",
       badge: "border-teal-500/30 text-teal-400 bg-teal-950/20",

@@ -80,22 +80,22 @@ const projects: Project[] = [
   {
     id: "PRJ-003",
     code: "03",
-    title: "ProjectFlow",
-    subtitle: "Project Management",
+    title: "FermiAI",
+    subtitle: "AI Medical Assistant",
     status: "Live",
-    description: "A collaborative project management application featuring real-time visual boards and sprint tracking.",
+    description: "An advanced AI-powered medical assistant designed to analyze patient symptoms, provide clinical summaries, and support healthcare decision-making.",
     features: [
-      "Dynamic real-time workflow synchronization using WebSocket subscriptions",
-      "Detailed time-tracking and milestone velocity analytics dashboards",
-      "Automated sprint planning and task backlog prioritization algorithms",
-      "Seamless GitHub pull request status and commit event integrations"
+      "Interactive AI chatbot for rapid medical symptom analysis and triage guidance",
+      "Automated generation of detailed patient clinical summaries and check-up notes",
+      "Secure, privacy-conscious architecture optimized for clinical workflows",
+      "Seamless integration with medical terminology databases and reference resources"
     ],
-    techStack: ["React", "Node.js (Express)", "MongoDB", "Socket.io", "Tailwind CSS"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini API", "Node.js"],
     links: {
-      demo: "https://projectflow-beryl-theta.vercel.app",
-      source: "https://github.com/moon908/project_mgmt"
+      demo: "https://fermi-ai.vercel.app/chat",
+      source: "https://github.com/moon908/Fermi_ai"
     },
-    image: "/project/project3.jpeg",
+    image: "/project/project3.jpg",
     theme: {
       border: "hover:border-blue-500/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.08)]",
       badge: "border-blue-500/30 text-blue-400 bg-blue-950/20",

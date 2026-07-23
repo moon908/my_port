@@ -28,27 +28,27 @@ const projects: Project[] = [
   {
     id: "PRJ-001",
     code: "01",
-    title: "Atheria AI",
-    subtitle: "Agriculture Analysis",
+    title: "VoxCommerce",
+    subtitle: "AI Voice Customer Care",
     status: "Live",
-    description: "An intelligent agriculture analysis platform providing crop health diagnostics and yield optimization insights.",
+    description: "An AI-powered voice agent platform designed for e-commerce, offering automated customer service, real-time order processing, and dynamic voice support.",
     features: [
-      "Computer-vision based crop foliage disease identification models",
-      "Geospatial soil composition and moisture analysis integrations",
-      "Historical climatic data ingestion for predictive harvest forecasting",
-      "Localized farm advisory generation via natural language generation"
+      "Human-like conversational AI voice agent for 24/7 automated customer support",
+      "Real-time order tracking, cancellations, and product recommendations via voice",
+      "Advanced speech-to-text and intent classification with extremely low latency",
+      "Live sentiment analysis and seamless escalation to human agents when needed"
     ],
-    techStack: ["Next.js", "Python (PyTorch)", "FastAPI", "PostgreSQL", "Tailwind CSS"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Daily.co", "OpenAI API"],
     links: {
-      demo: "https://knowyourcrop.vercel.app",
-      source: "https://github.com/moon908/crop_health"
+      demo: "https://voxcommerce.vercel.app/",
+      source: "https://github.com/moon908/VoxCommerce"
     },
-    image: "/project/project1.jpeg",
+    image: "/project/project4.jpg",
     theme: {
-      border: "hover:border-violet-500/50 hover:shadow-[0_0_35px_rgba(139,92,246,0.08)]",
-      badge: "border-violet-500/30 text-violet-400 bg-violet-950/20",
-      iconBg: "bg-violet-950/30 border border-violet-500/20 text-violet-400",
-      text: "text-violet-400 group-hover:text-violet-300"
+      border: "hover:border-teal-500/50 hover:shadow-[0_0_35px_rgba(20,184,166,0.08)]",
+      badge: "border-teal-500/30 text-teal-400 bg-teal-950/20",
+      iconBg: "bg-teal-950/30 border border-teal-500/20 text-teal-400",
+      text: "text-teal-400 group-hover:text-teal-300"
     }
   },
   {
@@ -106,27 +106,27 @@ const projects: Project[] = [
   {
     id: "PRJ-004",
     code: "04",
-    title: "VoxCommerce",
-    subtitle: "AI Voice Customer Care",
+    title: "Atheria AI",
+    subtitle: "Agriculture Analysis",
     status: "Live",
-    description: "An AI-powered voice agent platform designed for e-commerce, offering automated customer service, real-time order processing, and dynamic voice support.",
+    description: "An intelligent agriculture analysis platform providing crop health diagnostics and yield optimization insights.",
     features: [
-      "Human-like conversational AI voice agent for 24/7 automated customer support",
-      "Real-time order tracking, cancellations, and product recommendations via voice",
-      "Advanced speech-to-text and intent classification with extremely low latency",
-      "Live sentiment analysis and seamless escalation to human agents when needed"
+      "Computer-vision based crop foliage disease identification models",
+      "Geospatial soil composition and moisture analysis integrations",
+      "Historical climatic data ingestion for predictive harvest forecasting",
+      "Localized farm advisory generation via natural language generation"
     ],
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Daily.co", "OpenAI API"],
+    techStack: ["Next.js", "Python (PyTorch)", "FastAPI", "PostgreSQL", "Tailwind CSS"],
     links: {
-      demo: "https://voxcommerce.vercel.app/",
-      source: "https://github.com/moon908/VoxCommerce"
+      demo: "https://knowyourcrop.vercel.app",
+      source: "https://github.com/moon908/crop_health"
     },
-    image: "/project/project4.jpg",
+    image: "/project/project1.jpeg",
     theme: {
-      border: "hover:border-teal-500/50 hover:shadow-[0_0_35px_rgba(20,184,166,0.08)]",
-      badge: "border-teal-500/30 text-teal-400 bg-teal-950/20",
-      iconBg: "bg-teal-950/30 border border-teal-500/20 text-teal-400",
-      text: "text-teal-400 group-hover:text-teal-300"
+      border: "hover:border-violet-500/50 hover:shadow-[0_0_35px_rgba(139,92,246,0.08)]",
+      badge: "border-violet-500/30 text-violet-400 bg-violet-950/20",
+      iconBg: "bg-violet-950/30 border border-violet-500/20 text-violet-400",
+      text: "text-violet-400 group-hover:text-violet-300"
     }
   },
   {

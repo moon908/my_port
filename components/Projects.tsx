@@ -43,7 +43,7 @@ const projects: Project[] = [
       demo: "https://voxcommerce.vercel.app/",
       source: "https://github.com/moon908/VoxCommerce"
     },
-    image: "/project/project4.jpg",
+    image: "/project/project1.jpg",
     theme: {
       border: "hover:border-teal-500/50 hover:shadow-[0_0_35px_rgba(20,184,166,0.08)]",
       badge: "border-teal-500/30 text-teal-400 bg-teal-950/20",
@@ -121,7 +121,7 @@ const projects: Project[] = [
       demo: "https://knowyourcrop.vercel.app",
       source: "https://github.com/moon908/crop_health"
     },
-    image: "/project/project1.jpeg",
+    image: "/project/project4.jpeg",
     theme: {
       border: "hover:border-violet-500/50 hover:shadow-[0_0_35px_rgba(139,92,246,0.08)]",
       badge: "border-violet-500/30 text-violet-400 bg-violet-950/20",

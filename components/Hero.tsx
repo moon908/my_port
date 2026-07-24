@@ -21,7 +21,7 @@ export default function Home() {
     });
 
     const text1 = "👋, My Name is Siddhesh Moon";
-    const text2 = "I'm a Engineer";
+    const text2 = "I am an AI Engineer";
 
     useEffect(() => {
         let index1 = 0;

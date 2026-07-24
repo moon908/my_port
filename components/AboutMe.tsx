@@ -466,7 +466,7 @@ export default function AboutMe() {
               <span className="text-violet-400">Siddhesh</span> Moon
             </h3>
             <div className="text-[10px] sm:text-xs font-mono tracking-wider text-neutral-400 uppercase mb-4 text-center">
-              Operations | AI Engineering | Data Analytics
+              AI Engineering | Data Analytics | Operations
             </div>
             
             <p className="text-center text-xs sm:text-sm text-neutral-400 font-mono leading-relaxed mb-6 max-w-[300px] sm:max-w-[320px]">

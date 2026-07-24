@@ -284,7 +284,7 @@ export default function Projects() {
                         <h3 className="text-lg sm:text-xl font-bold tracking-tight text-neutral-100 group-hover:text-blue-400 transition-colors duration-200">
                           {project.title}
                         </h3>
-                        <div className="text-[10px] font-mono tracking-wide text-neutral-400 uppercase leading-snug">
+                        <div className={`text-[10px] font-mono tracking-wide uppercase leading-snug ${project.theme.text}`}>
                           {project.subtitle}
                         </div>
                         <p className="text-xs text-neutral-400 leading-relaxed pt-1">

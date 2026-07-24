@@ -600,34 +600,7 @@ export default function AboutMe() {
             {/* Key Competencies Matrix (4 columns/cards) */}
             <div className="reveal reveal-slide-up reveal-delay-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               
-              {/* Competency 1: Operations */}
-              <div className="bg-neutral-900/20 border border-neutral-900 p-5 rounded-2xl flex flex-col space-y-4 hover:border-violet-500/15 transition-all duration-300">
-                <div className="flex items-center space-x-2.5">
-                  <div className="w-7 h-7 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
-                    <svg className="w-4 h-4 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.43l-1.003.828c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.43l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 0 1 0-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                    </svg>
-                  </div>
-                  <h4 className="text-xs sm:text-sm font-bold font-mono uppercase tracking-widest text-neutral-200">Operations</h4>
-                </div>
-                <ul className="space-y-2.5 text-xs font-mono text-neutral-400">
-                  <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-xs font-bold">✓</span>
-                    <span>Process Optimization</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-xs font-bold">✓</span>
-                    <span>Workflow Automation</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <span className="text-violet-500 text-xs font-bold">✓</span>
-                    <span>Business Strategy</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Competency 2: AI Engineering */}
+              {/* Competency 1: AI Engineering */}
               <div className="bg-neutral-900/20 border border-neutral-900 p-5 rounded-2xl flex flex-col space-y-4 hover:border-violet-500/15 transition-all duration-300">
                 <div className="flex items-center space-x-2.5">
                   <div className="w-7 h-7 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
@@ -653,7 +626,7 @@ export default function AboutMe() {
                 </ul>
               </div>
 
-              {/* Competency 3: Data Analytics */}
+              {/* Competency 2: Data Analytics */}
               <div className="bg-neutral-900/20 border border-neutral-900 p-5 rounded-2xl flex flex-col space-y-4 hover:border-violet-500/15 transition-all duration-300">
                 <div className="flex items-center space-x-2.5">
                   <div className="w-7 h-7 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
@@ -675,6 +648,33 @@ export default function AboutMe() {
                   <li className="flex items-center space-x-2">
                     <span className="text-violet-500 text-xs font-bold">✓</span>
                     <span>Insight Generation</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Competency 3: Operations */}
+              <div className="bg-neutral-900/20 border border-neutral-900 p-5 rounded-2xl flex flex-col space-y-4 hover:border-violet-500/15 transition-all duration-300">
+                <div className="flex items-center space-x-2.5">
+                  <div className="w-7 h-7 rounded-md bg-neutral-950 border border-neutral-800/60 flex items-center justify-center shrink-0">
+                    <svg className="w-4 h-4 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.43l-1.003.828c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.43l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 0 1 0-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold font-mono uppercase tracking-widest text-neutral-200">Operations</h4>
+                </div>
+                <ul className="space-y-2.5 text-xs font-mono text-neutral-400">
+                  <li className="flex items-center space-x-2">
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
+                    <span>Process Optimization</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
+                    <span>Workflow Automation</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-violet-500 text-xs font-bold">✓</span>
+                    <span>Business Strategy</span>
                   </li>
                 </ul>
               </div>
